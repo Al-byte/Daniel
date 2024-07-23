@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+
+  .card {
+    min-height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    margin: 0 auto;
+  }
+    
+  input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #message {
+    margin-top: 10px;
+    color: #ff6347;
+    font-size: 14px;
+  }
+  
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+}

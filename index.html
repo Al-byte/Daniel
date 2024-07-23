@@ -8,31 +8,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="./index.js">
     </script>
   <title></title>
 </head>
 <body>
-  <div class="container card">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-md-3">
-        <img src="./resources/css/decoder.png" alt="" class="w-100">
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-md-3 my-5 text-center">
-        <label for="password">Enter password:</label> <br>
-        <input type="password" id="password" name="password">
-        <button onclick="validatePassword()">Decrypt</button>
-        <p id="message"></p>
-      </div>
-    </div>  
-    </div>
-  
-
+    <!--<Page Content>-->
+        <div class="row sign-in-body">
+            <div class="col-12">
+                <div class="container sign-in-container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-6 mx-auto my-5 text-center">
+                          <img src="./resources/assets/giphy.gif" class="w-50" alt="">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <form class="col-10 col-md-6 mx-auto">
+                            <div class="row card py-4 sign-in-card mb-5">
+                                <div class="col-md-8 mx-auto">
+                                    <img src="./resources/assets/decoder.png" alt="" class="w-100">
+                                    <h6 class="text-center mt-3">Enter Passphrase</h6>
+                                    
+                                    <input type="text" placeholder="Passphrase" name="passphrase" class="w-100 my-4">
+                                    
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-12 text-center">
+                                      <input type="submit" onclick="check(this.form)" value="Login" class="btn btn-success mb-3"/>
+                                    </div>
+                                </div>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    <!--<Page Content>-->
+    
+            <script language="javascript">
+              
+              function check(form)
+                {
+                  if(form.passphrase.value == "STARKKNOWSTHIS..." || form.passphrase.value == "Starkknowsthis..." || form.passphrase.value == "starkknowsthis..." )
+                    {
+                      window.open('./message.html')
+                    }
+                    else 
+                    {
+                      alert("The passphrase you entered is incorrect :-(")
+                    }
+                }
+            </script>
 </body>
 </html>

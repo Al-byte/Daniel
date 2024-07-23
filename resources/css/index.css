@@ -1,77 +1,153 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  
-  }
+/*<General pages>*/
 
-  .background {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  }
+@font-face {
+  font-family: christmas;
+  src: url('../fonts/Christmas\ Squad\ -\ Personal\ Use.otf');
+}
 
-body {
-    font-family: Arial, sans-serif;
-  }
+h1, .section-header, h5 {
+  font-family: christmas;
+}
 
-  .container {
-    display: flex;
-    margin: 0 auto;
-    top: 50px;
-  }
+h5 {
+  font-size: 42px;
+}
+
+
+.page-title {
+  color: white;
+  opacity: 0.8;
+}
+
+.page-title .bg {
+  background-color: rgb(151, 28, 30);
+  line-height: 1.34;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn, .banner {
+  box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -moz-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -webkit-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -khtml-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+}
+
+.btn, .page-title, .section-header, .nav-item {
+  font-weight: 700;
+}
+
+.card-body {
+  border-bottom: 1px solid grey;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.rounded {
+    border-radius: 100% !important;
+}
+
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}  
+
+
+/*<Logged in Page content>*/
+
+
+/*<Sign In>*/
+
+.sign-in-body, .upload-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sign-in-body {
+  background-color: black;
+}
+
+.sign-in-card, .upload-card {
+  border-bottom: 1px solid gray;
+  background-color: rgb(245, 245, 245);
+}
+
+.btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
+  background-color: rgb(217, 182, 56) !important;
+  border-color: rgb(217, 182, 56);
+}
+
+/*</Sign In>*/
+
+
+
+/*</Logged in Page content>*/
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+    .web {
+        display: none !important;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 768px) { 
     
-  input[type="password"] {
-    padding: 10px;
-    margin: 10px 0;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  .web .nav-item {
+    color: black;
   }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  #message {
-    margin-top: 10px;
-    color: #ff6347;
-    font-size: 14px;
-  }
-  
+
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 425.98px) { 
+
+
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
-    
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-   
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-   
+  
+ 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-   
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-   
+
+  .sign-in-body {
+    min-height:85vh;
+  }
+
 }
