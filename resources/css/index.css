@@ -36,12 +36,7 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
-.btn, .banner {
-  box-shadow: 0 2px 12px rgba(0,6,12,.5);
-  -moz-box-shadow: 0 2px 12px rgba(0,6,12,.5);
-  -webkit-box-shadow: 0 2px 12px rgba(0,6,12,.5);
-  -khtml-box-shadow: 0 2px 12px rgba(0,6,12,.5);
-}
+
 
 .btn, .page-title, .section-header, .nav-item {
   font-weight: 700;
